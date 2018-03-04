@@ -13,7 +13,7 @@ class Stack {
     ~Stack(); //destructor
     void push(string data); //push new node on top of stack
     void pop(); //remove node from top of stack
-    void output_stack(); //output top data
+    void output_stack(); //output data
     bool isEmpty();
     
     private:
@@ -36,7 +36,7 @@ Stack::~Stack() { //destructor
     
 }
 void Stack::push(string data) {
-    //initialize dynamically a new node called temp, store the old top in temp's next, make temp the new top, store passed data in temp's data
+    //initialize a new node called temp, store the old top in temp's next, make temp the new top, store passed data in temp's data
     Node * temp = new Node();
     temp->next = top;
     top = temp;
